@@ -1,12 +1,25 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 import image1 from "../images/img1.jpeg";
 
 export default function Hero() {
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  }, []);
+
   return (
     <section id="inicio" className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
       
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${image1})` }}
+        data-aos="zoom-out"
+        data-aos-duration="1800"
       />
 
       <div
@@ -21,12 +34,16 @@ export default function Hero() {
         <h1
           className="font-sans font-extrabold leading-[0.97] tracking-[-0.04em] text-white mb-7"
           style={{ fontSize: "clamp(3.5rem, 8vw, 7.5rem)" }}
+          data-aos="fade-up"
         >
           Soluciones <span className="text-[#F5C518]">eléctricas</span> profesionales.
         </h1>
 
-
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div 
+          className="flex flex-wrap gap-4 justify-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <a
             href="https://wa.me/59893966957"
             target="_blank"
@@ -43,11 +60,14 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex w-full max-w-[700px] border-t border-white/[0.12] pt-12 mt-6">
-
+        <div 
+          className="flex w-full max-w-[700px] border-t border-white/[0.12] pt-12 mt-6"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           <div className="flex-1 border-r border-white/[0.12]">
-            <span className="block text-[2.5rem] font-extrabold leading-none text-white tracking-tighter"> 500
-              <span className="text-[#F5C518]">+</span>
+            <span className="block text-[2.5rem] font-extrabold leading-none text-white tracking-tighter"> 
+              500<span className="text-[#F5C518]">+</span>
             </span>
             <span className="text-[0.7rem] font-bold text-white/40 uppercase tracking-widest mt-2 block">Proyectos</span>
           </div>

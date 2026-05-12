@@ -1,11 +1,10 @@
 import Home from './pages/Home'
-import Servicios from './pages/Servicios' 
+import Servicios from './pages/Services' 
 
 function App() {
   return (
     <>
       <Home />
-      <Servicios />
     </>
   )
 }
