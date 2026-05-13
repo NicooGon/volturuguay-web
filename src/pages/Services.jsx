@@ -25,24 +25,29 @@ export default function Services() {
   return (
     <section id="servicios" className="relative overflow-hidden bg-[#F7F9FC] py-28 px-[6vw]">
       
-      <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[500px] md:h-[600px]">
         <svg 
-          className="absolute top-[5%] -left-[10%] w-[80vw] h-[25vh] rotate-[-2deg] opacity-[0.06] blur-[1px]" 
+          className="w-[120%] md:w-[80%] h-full opacity-[0.06] blur-[1px] -translate-x-[15%] -translate-y-[10%] rotate-[-2deg]" 
           viewBox="0 0 900 220" 
-          preserveAspectRatio="xMinYMid slice"
+          preserveAspectRatio="xMinYMin slice"
         >
           <path 
             d="M 10 110 C 30 70, 60 40, 120 55 C 200 75, 280 35, 380 50 C 480 65, 560 30, 660 48 C 740 62, 820 40, 890 58 L 890 145 C 820 128, 740 155, 660 140 C 560 122, 480 158, 380 142 C 280 126, 200 162, 120 145 C 60 132, 30 155, 10 135 Z" 
             fill="#1A3D6B" 
           />
         </svg>
-        
+      </div>
+
+      <div className="absolute bottom-0 right-0 w-full h-[500px] md:h-[600px]">
         <svg 
-          className="absolute bottom-[10%] -right-[5%] w-[80vw] h-[25vh] rotate-[-2deg] opacity-[0.06] blur-[1px]" 
+          className="w-[120%] md:w-[80%] h-full opacity-[0.06] blur-[1px] translate-x-[15%] translate-y-[15%] rotate-[-2deg]" 
           viewBox="0 0 700 180" 
-          preserveAspectRatio="xMinYMid slice"
+          preserveAspectRatio="xMaxYMax slice" 
         >
-          <path d="M 5 85 C 25 55, 70 35, 140 48 C 230 65, 310 28, 400 42 C 490 56, 570 25, 650 40 C 685 47, 698 60, 695 90 L 695 118 C 698 135, 685 148, 650 142 C 570 128, 490 158, 400 145 C 310 132, 230 165, 140 150 C 70 138, 25 155, 5 128 Z" fill="#F5C518" />
+          <path 
+            d="M 5 85 C 25 55, 70 35, 140 48 C 230 65, 310 28, 400 42 C 490 56, 570 25, 650 40 C 685 47, 698 60, 695 90 L 695 118 C 698 135, 685 148, 650 142 C 570 128, 490 158, 400 145 C 310 132, 230 165, 140 150 C 70 138, 25 155, 5 128 Z" 
+            fill="#F5C518" 
+          />
         </svg>
       </div>
 
