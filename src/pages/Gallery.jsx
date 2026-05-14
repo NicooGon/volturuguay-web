@@ -52,9 +52,9 @@ export default function GallerySection() {
         <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 md:mb-16" data-aos="fade-up">
           <div className="max-w-xl">
             <span className="text-[#2F7FD8] text-[0.7rem] font-bold uppercase tracking-widest flex items-center gap-2 mb-4">
-              <span className="w-8 h-[2px] bg-[#2F7FD8]" /> Galería
+              <span className="w-8 h-0.5 bg-[#2F7FD8]" /> Galería
             </span>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#0B1F3A] leading-tight">Proyectos <br className="hidden md:block" /> Realizados.</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#0B1F3A] leading-tight">Proyectos <br className="hidden md:block" /> Realizados</h2>
           </div>
           <p className="text-[#6B7E96] max-w-sm text-base md:text-lg">Selección de trabajos eléctricos en Punta del Este y Maldonado.</p>
         </div>

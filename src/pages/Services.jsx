@@ -60,19 +60,17 @@ export default function Services() {
               Servicios
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold text-[#0B1F3A] leading-[1.1] tracking-tighter">
-              Soluciones Eléctricas<br />Integrales.
+              Soluciones Eléctricas<br />Integrales
             </h2>
           </div>
           
-          <p 
-            className="text-base md:text-[1rem] text-[#6B7E96] leading-relaxed lg:max-w-[45ch]"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Servicios profesionales para propiedades residenciales, edificios y
-            establecimientos comerciales en la Costa de Oro. Habilitado,
-            garantizado y con documentación en regla.
-          </p>
+          <div className="lg:text-right lg:justify-self-end" data-aos="fade-left" data-aos-delay="200">
+            <p className="text-base md:text-[1rem] text-[#6B7E96] leading-relaxed lg:max-w-[45ch]">
+              Servicios profesionales para propiedades residenciales, edificios y
+              establecimientos comerciales en la Costa de Oro. Habilitado,
+              garantizado y con documentación en regla.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

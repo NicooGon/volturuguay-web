@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Gallery from './Gallery'
 import Hero from './Hero'
 import Services from './Services'
+import AboutSection from "./AboutSection";
 
 export default function Home() {
   const { hash } = useLocation();
@@ -26,6 +27,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Gallery />
+        <AboutSection />
       </main>
     </div>
   )
