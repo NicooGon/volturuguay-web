@@ -27,7 +27,7 @@ export default function Services() {
       
       <div className="absolute top-0 left-0 w-full h-[500px] md:h-[600px]">
         <svg 
-          className="w-[120%] md:w-[80%] h-full opacity-[0.06] blur-[1px] -translate-x-[15%] -translate-y-[10%] rotate-[-2deg]" 
+          className="w-[120%] md:w-[80%] h-full opacity-[0.06] blur-[1px] -translate-x-[37%] -translate-y-[10%] rotate-[-2deg]" 
           viewBox="0 0 900 220" 
           preserveAspectRatio="xMinYMin slice"
         >
@@ -40,7 +40,7 @@ export default function Services() {
 
       <div className="absolute bottom-0 right-0 w-full h-[500px] md:h-[600px]">
         <svg 
-          className="w-[120%] md:w-[80%] h-full opacity-[0.06] blur-[1px] translate-x-[15%] translate-y-[15%] rotate-[-2deg]" 
+          className="w-[120%] md:w-[80%] h-full opacity-[0.06] blur-[1px] translate-x-[40%] translate-y-[15%] rotate-[-2deg]" 
           viewBox="0 0 700 180" 
           preserveAspectRatio="xMaxYMax slice" 
         >

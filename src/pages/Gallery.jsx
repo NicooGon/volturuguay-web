@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
+import ProjectCard from "../components/ProjectCard";
 
 import img2 from "../images/img2.jpeg";
 import img5 from "../images/img5.jpeg";
@@ -57,34 +59,29 @@ export default function GallerySection() {
           <p className="text-[#6B7E96] max-w-sm text-base md:text-lg">Selección de trabajos eléctricos en Punta del Este y Maldonado.</p>
         </div>
 
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:h-[550px]">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[275px] items-stretch">
           {PROJECTS.map((p, i) => (
-            <div
-              key={p.id}
-              className={`relative group rounded-[2rem] overflow-hidden cursor-pointer h-[300px] md:h-auto ${p.tall ? 'md:row-span-2' : ''}`}
-              data-aos="fade-up" data-aos-delay={i * 100}
+            <div 
+              key={p.id} 
+              className={`relative w-full h-[400px] 
+                ${p.tall ? 'md:row-span-2 md:h-full' : 'md:h-full'}`} 
+              data-aos="fade-up"
             >
-              <img src={p.img} alt={p.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-              
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A]/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
-
-              <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
-                <span className="text-[#F5C518] text-[0.6rem] font-black uppercase mb-1 tracking-wider">{p.tag}</span>
-                <h3 className="text-white font-bold text-xl leading-tight">{p.title}</h3>
-                <div className="overflow-hidden">
-                  <p className="text-white/70 text-sm mt-2 transition-all duration-500 transform translate-y-full group-hover:translate-y-0">
-                    {p.loc}
-                  </p>
-                </div>
-              </div>
+              <ProjectCard 
+                project={p} 
+                variant="hero"
+              />
             </div>
           ))}
         </div>
 
         <div className="mt-12 flex justify-center md:justify-end">
-          <a href="/galeria" className="px-10 py-3 rounded-full border border-slate-200 font-bold text-[#0B1F3A] hover:bg-[#0B1F3A] hover:text-white transition-all text-sm tracking-wide">
+          <Link 
+            to="/galeria" 
+            className="px-10 py-3 rounded-full border border-slate-200 font-bold text-[#0B1F3A] hover:bg-[#0B1F3A] hover:text-white transition-all text-sm tracking-wide"
+          >
             Explorar toda la galería →
-          </a>
+          </Link>
         </div>
       </div>
     </section>

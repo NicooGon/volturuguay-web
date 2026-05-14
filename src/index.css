@@ -17,3 +17,11 @@
 }
 
 .font-logo { font-family: var(--font-logo) !important; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 72px;
+}
