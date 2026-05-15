@@ -56,7 +56,7 @@ export default function GallerySection() {
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold text-[#0B1F3A] leading-tight">Proyectos <br className="hidden md:block" /> Realizados</h2>
           </div>
-          <p className="text-[#6B7E96] max-w-sm text-base md:text-lg">Selección de trabajos eléctricos en Punta del Este y Maldonado.</p>
+          <p className="text-[#6B7E96]  max-w-sm text-base lg:text-right ">Selección de trabajos eléctricos en Punta del Este y Maldonado.</p>
         </div>
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[275px] items-stretch">
