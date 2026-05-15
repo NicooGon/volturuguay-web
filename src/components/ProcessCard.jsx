@@ -1,6 +1,6 @@
 export default function ProcessCard({ number, title, description, tag }) {
   return (
-    <div className="group relative p-10 transition-all duration-500 flex flex-col justify-between min-h-[350px] bg-white hover:bg-[#0B1F3A] border-r border-slate-100 last:border-0">
+    <div className="group relative p-10 transition-all duration-500 flex flex-col justify-between h-full bg-white hover:bg-[#0B1F3A] border-r border-slate-100 last:border-0">
       <div>
         <span className="text-7xl font-black text-[#0B1F3A] opacity-[0.07] group-hover:opacity-10 group-hover:text-white block mb-6 transition-all duration-500">
           {number}
