@@ -44,7 +44,7 @@ export default function ContactForm({ onSuccess }) {
 
         
       <FormField label="Email">
-        <input name="email" required type="email" placeholder="tu@email.com" className="w-full bg-white/[0.03] border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/[0.05] transition-all" />
+        <input name="email" required type="email" placeholder="correo@ejemplo.com" className="w-full bg-white/[0.03] border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/[0.05] transition-all" />
       </FormField>
 
       <FormField label="Mensaje">

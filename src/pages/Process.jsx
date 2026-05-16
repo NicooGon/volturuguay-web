@@ -18,8 +18,8 @@ export default function ProcessSection() {
             <span className="text-[#2F7FD8] text-[0.7rem] font-bold uppercase tracking-widest flex items-center gap-2 mb-4">
               <span className="w-8 h-[2px] bg-[#2F7FD8]" /> Proceso de trabajo
             </span>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#0B1F3A] leading-[1.1]">
-              Cuatro pasos, <br /> sin complicaciones.
+            <h2 className="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold text-[#0B1F3A] leading-[1.1]">
+              Cuatro pasos, <br /> sin complicaciones
             </h2>
           </div>
           <p 

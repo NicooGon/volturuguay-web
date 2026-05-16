@@ -19,15 +19,16 @@ export default function ContactSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#2F7FD8]/10 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
 
 
-      <div className="w-full relative z-10">
+      <div className="container mx-auto relative z-10">
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center w-full min-w-0">
           
           <div data-aos="fade-right">
             <span className="text-[#2F7FD8] text-[0.7rem] font-bold uppercase tracking-[0.3em] flex items-center gap-3 mb-6">
               <span className="w-10 h-[1px] bg-[#2F7FD8]" /> Contactanos
             </span>
-            <h2 className="text-5xl md:text-7xl font-black text-white leading-[1] tracking-tighter mb-8">
-              Llevemos energía <br /> a tu proyecto.
+            <h2 className="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold text-white leading-[1] tracking-tighter mb-8">
+              Consultanos sin <br /> compromiso
             </h2>
             <p className="text-slate-400 max-w-sm text-base leading-relaxed mb-12">
               Estamos en Maldonado y Punta del Este para asesorarte. Presupuestos cerrados y sin sorpresas.

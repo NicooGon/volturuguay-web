@@ -7,9 +7,9 @@ export default function ServiceCard({ num, icon: Icon, title, desc }) {
       
       <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#2F7FD8] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-350" />
 
-      <div className="text-[0.68rem] font-bold tracking-[0.12em] uppercase text-[#DDE5EF] mb-5">
-        {num}
-      </div>
+      <div className="text-[0.68rem] font-bold tracking-[0.2em] uppercase text-[#2F7FD8] md:text-[#9ea4ad] md:group-hover:text-[#2F7FD8] mb-5 transition-colors duration-300">
+      {num}
+    </div>
 
       <div className="w-[50px] h-[50px] rounded-xl bg-[#E8F3FF] group-hover:bg-[#2F7FD8]/10 border-[1.5px] border-[#DDE5EF] group-hover:border-[#2F7FD8]/20 flex items-center justify-center mb-5 text-[#2F7FD8] transition-all duration-300">
         <Icon size={20} strokeWidth={1.5} />

@@ -21,7 +21,7 @@ export default function ProjectPage() {
       
       <section className="bg-[#0B141E] pt-32 pb-16 px-[6vw] relative text-left">
         <h1 
-          className="text-white md:text-[70px] font-black tracking-tighter leading-[0.8] mb-8" 
+          className="text-white text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold tracking-tighter leading-[0.8] mb-8" 
           style={{ fontSize: "clamp(3.5rem, 8vw, 5.5rem)" }}
           data-aos="fade-right"
         >

@@ -33,7 +33,7 @@ export default function AboutSection() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold leading-[1.1] ">
               El Estándar <br />
-              <span className="text-[#2F7FD8]">de Confianza.</span>
+              <span className="text-[#2F7FD8]">de Confianza</span>
             </h2>
           </div>
           

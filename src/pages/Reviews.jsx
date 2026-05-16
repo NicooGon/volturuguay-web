@@ -17,8 +17,8 @@ export default function ReviewSection() {
             <span className="text-[#2F7FD8] text-[0.7rem] font-bold uppercase tracking-[0.2em] flex items-center gap-3 mb-5">
               <span className="w-10 h-[2px] bg-[#2F7FD8]" /> Testimonios
             </span>
-            <h2 className="text-5xl md:text-6xl font-black text-[#0B1F3A] leading-[1.1] tracking-tighter">
-              Lo que dicen <br /> nuestros clientes.
+            <h2 className="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold text-[#0B1F3A] leading-[1.1] tracking-tighter">
+              Lo que dicen <br /> nuestros clientes
             </h2>
           </div>
           <p className="text-[#6B7E96] max-w-sm text-base lg:text-right" data-aos="fade-left">
