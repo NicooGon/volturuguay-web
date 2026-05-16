@@ -1,16 +1,6 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import 'aos/dist/aos.css';
 import image1 from "../images/img1.jpeg";
 
 export default function Hero() {
-  
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-    });
-  }, []);
 
   return (
     <section id="inicio" className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
@@ -32,8 +22,8 @@ export default function Hero() {
       <div className="relative z-[2] w-full max-w-[1000px] mx-auto flex flex-col items-center px-[6vw] pt-20">
 
         <h1
-          className="font-sans font-extrabold leading-[0.97] tracking-[-0.04em] text-white mb-7"
-          style={{ fontSize: "clamp(3.5rem, 8vw, 7.5rem)" }}
+          className="font-sans font-extrabold leading-[0.97] tracking-[-0.04em] text-white mb-7 w-full"
+          style={{ fontSize: "clamp(2.5rem, 8vw, 7.5rem)" }}
           data-aos="fade-up"
         >
           Soluciones <span className="text-[#F5C518]">eléctricas</span> profesionales.
@@ -45,12 +35,10 @@ export default function Hero() {
           data-aos-delay="300"
         >
           <a
-            href="https://wa.me/59893966957"
-            target="_blank"
-            rel="noreferrer"
+            href="#contacto"
             className="bg-[#2F7FD8] text-white font-bold text-[0.95rem] px-8 py-4 rounded-[9px] shadow-[0_4px_24px_rgba(47,127,216,0.45)] transition-all hover:-translate-y-1 no-underline"
           >
-            Escribir por WhatsApp
+            Solicitá presupuesto
           </a>
           <a
             href="#servicios"

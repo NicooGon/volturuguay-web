@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import ReviewCard from "../components/ReviewCard";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const REVIEWS = [
   { name: "Marcela Rodríguez", location: "Punta del Este", review: "Realizaron la instalación eléctrica completa de nuestra casa de veraneo. Trabajo impecable, presupuesto exacto y certificación UTE sin inconvenientes." },
@@ -10,10 +8,9 @@ const REVIEWS = [
 ];
 
 export default function ReviewSection() {
-  useEffect(() => { AOS.init({ duration: 1000, once: true }); }, []);
 
   return (
-    <section className="relative py-28 px-[6vw] bg-gradient-to-b from-[#F8FAFC] to-white overflow-hidden">
+    <section id="reseñas" className="relative py-28 px-[6vw] bg-gradient-to-b from-[#F8FAFC] to-white overflow-hidden">
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-20">
           <div className="max-w-xl" data-aos="fade-right">

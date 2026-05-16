@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-const LINKS = [
-  { n: "Servicios", id: "servicios" }, { n: "Galería", id: "galeria" },{ n: "Proceso", id: "proceso" }, 
-  { n: "Nosotros", id: "nosotros" },{ n: "Contacto", id: "contacto" }
-];
+import NavLinks from "../data/NavLinks";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,7 +27,7 @@ export default function Navbar() {
         <ul className={`hidden lg:flex items-center gap-2 p-1 rounded-full border transition-all duration-500 ease-in-out ${
           scrolled ? "bg-white/5 border-white/10" : "bg-black/20 border-white/5"
         }`}>
-          {LINKS.map((link) => (
+          {NavLinks.map((link) => (
             <li key={link.id}>
               <a href={`/#${link.id}`} className="text-white/60 hover:text-white text-xs font-bold px-4 py-2 block no-underline transition-colors">
                 {link.n}
@@ -57,7 +53,7 @@ export default function Navbar() {
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}>
         <ul className="flex flex-col items-center pt-[100px] pb-12 gap-6 list-none m-0">
-          {LINKS.map((link) => (
+          {NavLinks.map((link) => (
             <li key={link.id}>
               <a href={`/#${link.id}`} onClick={() => setIsOpen(false)} className="text-white/70 text-lg font-bold no-underline hover:text-[#2F7FD8] transition-colors uppercase tracking-widest">
                 {link.n}

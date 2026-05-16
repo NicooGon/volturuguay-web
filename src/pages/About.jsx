@@ -20,8 +20,8 @@ export default function AboutSection() {
         }}
       />
 
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#2F7FD8]/10 blur-[150px] rounded-full -mr-64 -mt-64 z-0" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#2F7FD8]/5 blur-[120px] rounded-full -ml-32 -mb-32 z-0" />
+      <div className="absolute top-0 right-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#2F7FD8]/10 blur-[100px] md:blur-[150px] rounded-full z-0" />
+      <div className="absolute bottom-0 left-0 w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-[#2F7FD8]/5 blur-[80px] md:blur-[120px] rounded-full z-0" />
 
       <div className="container mx-auto relative z-10">
         
@@ -80,7 +80,7 @@ export default function AboutSection() {
                     <div className="text-6xl font-black text-white italic tracking-tighter">2007</div>
                 </div>
 
-                <Star className="absolute bottom-[-40px] right-[-40px] text-white/5 w-64 h-64 -rotate-12" />
+                <Star className="absolute bottom-[-40px] right-[-40px] text-white/5 w-40 h-40 -rotate-12" />
             </div>
           </div>
         </div>

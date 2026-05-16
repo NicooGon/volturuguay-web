@@ -1,29 +1,10 @@
-import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ProjectCard from "../components/ProjectCard";
-
-import img2 from "../images/img2.jpeg";
-import img5 from "../images/img5.jpeg";
-import img10 from "../images/img10.jpeg";
-import img12 from "../images/img12.jpeg";
-import img14 from "../images/img14.jpeg";
-
-const PROJECTS = [
-  { id: 1, tag: "Infraestructura", title: "Bodega Oceánica", loc: "José Ignacio · Maldonado", img: img2, tall: true },
-  { id: 2, tag: "Comercial", title: "Iluminación Estación DISA", loc: "Parada 24 · Playa Mansa", img: img5 },
-  { id: 3, tag: "Obra Nueva", title: "Hotel Enjoy (Conrad)", loc: "Parada 4 · Playa Mansa", img: img10 },
-  { id: 4, tag: "Iluminación Exterior", title: "Diseño lumínico de accesos", loc: "Residencia privada · Manantiales", img: img12 },
-  { id: 5, tag: "Industrial", title: "Tablero de distribución 400V", loc: "Planta de servicios · Maldonado", img: img14 },
-];
+import Projects from "../data/Projects";
 
 export default function GallerySection() {
   const [modalOpen, setModalOpen] = useState(false);
-
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
 
   return (
     <section id="galeria" className="relative py-12 md:py-20 px-[6vw] bg-white overflow-hidden">
@@ -60,7 +41,7 @@ export default function GallerySection() {
         </div>
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[275px] items-stretch">
-          {PROJECTS.map((p, i) => (
+          {Projects.map((p, i) => (
             <div 
               key={p.id} 
               className={`relative w-full h-[400px] 

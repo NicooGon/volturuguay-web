@@ -7,6 +7,7 @@ import Services from './Services'
 import About from "./About";
 import Process from "./Process";
 import Reviews from "./Reviews";
+import Contact from "./Contact";
 
 export default function Home() {
   const { hash } = useLocation();
@@ -32,6 +33,7 @@ export default function Home() {
         <About />
         <Process />
         <Reviews />
+        <Contact />
       </main>
     </div>
   )

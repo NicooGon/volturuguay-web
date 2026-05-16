@@ -1,7 +1,4 @@
-import { useEffect } from "react";
 import ProcessCard from "../components/ProcessCard";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const STEPS = [
   { number: "01", tag: "Contacto", title: "Contacto Inicial", description: "El cliente se comunica por WhatsApp, teléfono o formulario. No se requieren conocimientos técnicos previos." },
@@ -11,12 +8,9 @@ const STEPS = [
 ];
 
 export default function ProcessSection() {
-  useEffect(() => {
-    AOS.init({ duration: 600, once: true });
-  }, []);
 
   return (
-    <section className="py-20 px-[6vw] bg-white">
+    <section id="proceso" className="py-20 px-[6vw] bg-white">
       <div className="container mx-auto">
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16">

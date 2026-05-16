@@ -1,6 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@800&display=swap');
-
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/syne-v24-latin-800.woff2') format('woff2'); 
+}
 
 @theme {
   --font-sans: "Plus Jakarta Sans", sans-serif;
@@ -9,14 +55,18 @@
 }
 
 @layer base {
+  html {
+    overflow-x: hidden;
+  }
   body {
     @apply m-0 p-0 antialiased;
     background-color: #020617; 
-    font-family: var(--font-sans) !important;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
   }
 }
 
-.font-logo { font-family: var(--font-logo) !important; }
+.font-logo { font-family: var(--font-logo); }
 
 html {
   scroll-behavior: smooth;
