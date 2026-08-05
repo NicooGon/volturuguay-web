@@ -55,8 +55,8 @@ export default function GallerySection() {
         </div>
 
         <div className="mt-12 flex justify-center md:justify-end">
-          <Link 
-            to="/galeria" 
+          <Link
+            to="/galeria"
             className="px-10 py-3 rounded-full border border-slate-200 font-bold text-[#0B1F3A] hover:bg-[#0B1F3A] hover:text-white transition-all text-sm tracking-wide"
           >
             Explorar toda la galería →

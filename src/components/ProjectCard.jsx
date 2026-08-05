@@ -5,7 +5,7 @@ export default function ProjectCard({ project, onClick, variant = "grid" }) {
       className={`relative group rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 bg-[#0B141E]
         ${variant === "hero" 
           ? "h-full w-full" 
-          : "aspect-[4/3] w-full"} 
+          : "aspect-4/3 w-full"} 
       `}
     >
       <img
