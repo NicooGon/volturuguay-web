@@ -14,11 +14,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-[100] h-[72px] flex items-center justify-between px-[6vw] transition-all duration-500 ease-in-out ${
+      <nav className={`fixed top-0 left-0 right-0 z-100 h-18 flex items-center justify-between px-[6vw] transition-all duration-500 ease-in-out ${
           scrolled || isOpen ? "bg-[#080f1c]/95 backdrop-blur-xl border-b border-white/10" : "bg-transparent border-b border-transparent"
         }`}>
         
-        <Link to="/" onClick={() => window.scrollTo(0,0)} className="no-underline group relative z-[110] shrink-0">
+        <Link to="/" onClick={() => window.scrollTo(0,0)} className="no-underline group relative z-110 shrink-0">
           <span className="font-logo text-xl font-extrabold text-white">
             Volt<span className="text-[#2F7FD8]">Uruguay</span>
           </span>
@@ -36,7 +36,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center gap-4 relative z-[110] shrink-0">
+        <div className="flex items-center gap-4 relative z-110 shrink-0">
           <a href="/#contacto" className="hidden sm:block bg-[#2F7FD8] text-white text-xs font-bold px-6 py-2.5 rounded-full hover:brightness-110 transition-all active:scale-95 no-underline">
             Solicitar Presupuesto
           </a>
@@ -49,10 +49,10 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className={`fixed inset-x-0 top-0 z-[90] bg-[#080f1c]/98 backdrop-blur-2xl border-b border-white/10 transition-transform duration-500 ease-in-out lg:hidden ${
+      <div className={`fixed inset-x-0 top-0 z-90 bg-[#080f1c]/98 backdrop-blur-2xl border-b border-white/10 transition-transform duration-500 ease-in-out lg:hidden ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}>
-        <ul className="flex flex-col items-center pt-[100px] pb-12 gap-6 list-none m-0">
+        <ul className="flex flex-col items-center pt-25 pb-12 gap-6 list-none m-0">
           {NavLinks.map((link) => (
             <li key={link.id}>
               <a href={`/#${link.id}`} onClick={() => setIsOpen(false)} className="text-white/70 text-lg font-bold no-underline hover:text-[#2F7FD8] transition-colors uppercase tracking-widest">

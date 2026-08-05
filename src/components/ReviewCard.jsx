@@ -3,7 +3,7 @@ export default function ReviewCard({ name, location, review, rating = 5 }) {
 
   return (
     <div 
-      className="group bg-white p-10 rounded-[2rem] border border-slate-100 flex flex-col justify-between h-full transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(11,31,58,0.1)] hover:border-[#2F7FD8]/20 cursor-default"
+      className="group bg-white p-10 rounded-4xl border border-slate-100 flex flex-col justify-between h-full transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(11,31,58,0.1)] hover:border-[#2F7FD8]/20 cursor-default"
     >
       <div>
         <div className="flex gap-1.5 mb-8 transition-transform duration-500 group-hover:scale-105 origin-left">

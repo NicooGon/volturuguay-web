@@ -24,7 +24,7 @@ export default function ProjectCard({ project, onClick, variant = "grid" }) {
           {project.tag}
         </span>
         
-        <h3 className="text-white font-bold text-[11px] sm:text-[14px] md:text-[18px] lg:text-[20px] leading-[1.2] tracking-tight line-clamp-2">
+        <h3 className="text-white font-bold text-[11px] sm:text-sm md:text-lg lg:text-xl leading-[1.2] tracking-tight line-clamp-2">
           {project.title}
         </h3>
         

@@ -2,7 +2,7 @@ export default function SuccessAlert({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/80 backdrop-blur-md">
+    <div className="fixed inset-0 z-100 flex items-center justify-center p-6 bg-black/80 backdrop-blur-md">
       <div 
         className="bg-[#0A1124] border border-white/10 p-10 rounded-[3rem] shadow-2xl max-w-sm w-full text-center"
         data-aos="zoom-in" 

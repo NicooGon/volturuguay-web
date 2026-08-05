@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"; 
 import ProjectCard from "../components/ProjectCard";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -36,7 +35,7 @@ export default function ProjectPage() {
         </p>
       </section>
 
-      <div className="sticky top-[65px] z-40 bg-[#EFEDE5]/95 backdrop-blur-md border-b border-black/10 py-6 px-[6vw]">
+      <div className="sticky top-16.25 z-40 bg-[#EFEDE5]/95 backdrop-blur-md border-b border-black/10 py-6 px-[6vw]">
         <div className="relative flex items-center">
           
           <div className="flex overflow-x-auto no-scrollbar gap-2 pb-1 pr-10">
@@ -57,7 +56,7 @@ export default function ProjectPage() {
             ))}
           </div>
 
-          <div className="absolute right-0 h-full w-12 bg-gradient-to-l from-[#EFEDE5] to-transparent pointer-events-none md:hidden flex items-center justify-end">
+          <div className="absolute right-0 h-full w-12 bg-linear-to-l from-[#EFEDE5] to-transparent pointer-events-none md:hidden flex items-center justify-end">
             <svg 
               className="h-4 w-4 text-[#2F7FD8] animate-pulse" 
               fill="none" 

@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import ServicesData from "../data/ServicesData";
 import FormField from "./FormField";
 
 export default function ContactForm({ onSuccess }) {
@@ -35,20 +34,19 @@ export default function ContactForm({ onSuccess }) {
     <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <FormField label="Nombre">
-          <input name="nombre" required type="text" placeholder="Tu nombre" className="w-full bg-white/[0.03] border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/[0.05] transition-all" />
+          <input name="nombre" required type="text" placeholder="Tu nombre" className="w-full bg-white/3 border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/5 transition-all" />
         </FormField>
         <FormField label="Apellido">
-          <input name="apellido" required type="text" placeholder="Tu apellido" className="w-full bg-white/[0.03] border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/[0.05] transition-all" />
+          <input name="apellido" required type="text" placeholder="Tu apellido" className="w-full bg-white/3 border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/5 transition-all" />
         </FormField>
       </div>
-
         
       <FormField label="Email">
-        <input name="email" required type="email" placeholder="correo@ejemplo.com" className="w-full bg-white/[0.03] border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/[0.05] transition-all" />
+        <input name="email" required type="email" placeholder="correo@ejemplo.com" className="w-full bg-white/3 border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/5 transition-all" />
       </FormField>
 
       <FormField label="Mensaje">
-        <textarea name="mensaje" required rows="3" placeholder="¿En qué podemos ayudarte?" className="w-full bg-white/[0.03] border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/[0.05] transition-all resize-none"></textarea>
+        <textarea name="mensaje" required rows="3" placeholder="¿En qué podemos ayudarte?" className="w-full bg-white/3 border border-white/5 rounded-2xl p-4 text-sm text-white outline-none focus:border-[#2F7FD8]/50 focus:bg-white/5 transition-all resize-none"></textarea>
       </FormField>
 
       <button 

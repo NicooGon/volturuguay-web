@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutCard({ title, desc, icon, index }) {
   return (
     <div 
-      className="group relative p-8 rounded-[2rem] bg-white/[0.02] border border-white/5 hover:bg-white/[0.05] hover:border-[#2F7FD8]/30 transition-all duration-500 shadow-2xl"
+      className="group relative p-8 rounded-4xl bg-white/2 border border-white/5 hover:bg-white/5 hover:border-[#2F7FD8]/30 transition-all duration-500 shadow-2xl"
       data-aos="fade-up"
       data-aos-delay={index * 100}
     >

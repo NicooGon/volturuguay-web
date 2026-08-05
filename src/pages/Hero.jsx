@@ -13,13 +13,13 @@ export default function Hero() {
       />
 
       <div
-        className="absolute inset-0 z-[1]"
+        className="absolute inset-0 z-1"
         style={{
           background: "linear-gradient(to top, rgba(11,31,58,0.92) 0%, rgba(11,31,58,0.55) 50%, rgba(11,31,58,0.2) 100%)",
         }}
       />
 
-      <div className="relative z-[2] w-full max-w-[1000px] mx-auto flex flex-col items-center px-[6vw] pt-20">
+      <div className="relative z-2 w-full max-w-250 mx-auto flex flex-col items-center px-[6vw] pt-20">
 
         <h1
           className="font-sans font-extrabold leading-[0.97] tracking-[-0.04em] text-white mb-7 w-full"
@@ -49,18 +49,18 @@ export default function Hero() {
         </div>
 
         <div 
-          className="flex w-full max-w-[700px] border-t border-white/[0.12] pt-12 mt-6"
+          className="flex w-full max-w-175 border-t border-white/12 pt-12 mt-6"
           data-aos="fade-up"
           data-aos-delay="600"
         >
-          <div className="flex-1 border-r border-white/[0.12]">
+          <div className="flex-1 border-r border-white/12">
             <span className="block text-[2.5rem] font-extrabold leading-none text-white tracking-tighter"> 
               500<span className="text-[#F5C518]">+</span>
             </span>
             <span className="text-[0.7rem] font-bold text-white/40 uppercase tracking-widest mt-2 block">Proyectos</span>
           </div>
 
-          <div className="flex-1 border-r border-white/[0.12]">
+          <div className="flex-1 border-r border-white/12">
             <span className="block text-[2.5rem] font-extrabold leading-none text-white tracking-tighter">19</span>
             <span className="text-[0.7rem] font-bold text-white/40 uppercase tracking-widest mt-2 block">Años</span>
           </div>

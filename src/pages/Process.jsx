@@ -16,7 +16,7 @@ export default function ProcessSection() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16">
           <div className="max-w-xl" data-aos="fade-right">
             <span className="text-[#2F7FD8] text-[0.7rem] font-bold uppercase tracking-widest flex items-center gap-2 mb-4">
-              <span className="w-8 h-[2px] bg-[#2F7FD8]" /> Proceso de trabajo
+              <span className="w-8 h-0.5 bg-[#2F7FD8]" /> Proceso de trabajo
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold text-[#0B1F3A] leading-[1.1]">
               Cuatro pasos, <br /> sin complicaciones
@@ -31,7 +31,7 @@ export default function ProcessSection() {
         </div>
 
         <div 
-          className="relative overflow-hidden rounded-[2rem] border border-slate-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white shadow-sm"
+          className="relative overflow-hidden rounded-4xl border border-slate-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white shadow-sm"
           data-aos="fade-up"
         >
           {STEPS.map((step, i) => (

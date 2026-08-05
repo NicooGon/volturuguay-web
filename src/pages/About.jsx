@@ -20,15 +20,15 @@ export default function AboutSection() {
         }}
       />
 
-      <div className="absolute top-0 right-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#2F7FD8]/10 blur-[100px] md:blur-[150px] rounded-full z-0" />
-      <div className="absolute bottom-0 left-0 w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-[#2F7FD8]/5 blur-[80px] md:blur-[120px] rounded-full z-0" />
+      <div className="absolute top-0 right-0 w-75 h-75 md:w-150 md:h-150 bg-[#2F7FD8]/10 blur-[100px] md:blur-[150px] rounded-full z-0" />
+      <div className="absolute bottom-0 left-0 w-50 h-50 md:w-100 md:h-100 bg-[#2F7FD8]/5 blur-[80px] md:blur-[120px] rounded-full z-0" />
 
       <div className="container mx-auto relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 items-end gap-10 lg:gap-16 mb-20">
           <div data-aos="fade-right">
             <div className="inline-flex items-center gap-3 text-[0.7rem] font-bold tracking-[0.14em] uppercase text-[#2F7FD8] mb-4">
-              <span className="w-6 h-[2px] bg-[#2F7FD8] rounded-full" />
+              <span className="w-6 h-0.5 bg-[#2F7FD8] rounded-full" />
               Sobre Nosotros
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold leading-[1.1] ">
@@ -56,7 +56,7 @@ export default function AboutSection() {
 
           <div className="lg:col-span-4 flex flex-col gap-6">
             <div 
-              className="flex-1 p-10 rounded-[2.5rem] bg-gradient-to-b from-[#2F7FD8]/20 to-transparent border border-white/5 flex flex-col justify-between group overflow-hidden relative"
+              className="flex-1 p-10 rounded-[2.5rem] bg-linear-to-b from-[#2F7FD8]/20 to-transparent border border-white/5 flex flex-col justify-between group overflow-hidden relative"
               data-aos="fade-left"
             >
                 <div className="relative z-10">
@@ -80,7 +80,7 @@ export default function AboutSection() {
                     <div className="text-6xl font-black text-white italic tracking-tighter">2007</div>
                 </div>
 
-                <Star className="absolute bottom-[-40px] right-[-40px] text-white/5 w-40 h-40 -rotate-12" />
+                <Star className="absolute -bottom-10 -right-10 text-white/5 w-40 h-40 -rotate-12" />
             </div>
           </div>
         </div>

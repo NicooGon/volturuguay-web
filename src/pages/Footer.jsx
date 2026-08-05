@@ -1,6 +1,5 @@
-import NavLinks from "../data/NavLinks";
 import ServicesData from "../data/ServicesData";
-import { MessageCircle, Mail, MapPin, Phone } from "lucide-react";
+import { MessageCircle, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,7 +12,7 @@ export default function Footer() {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050A18] via-transparent to-transparent z-0 opacity-80" />
+      <div className="absolute inset-0 bg-linear-to-b from-[#050A18] via-transparent to-transparent z-0 opacity-80" />
 
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">

@@ -1,17 +1,15 @@
-import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ProjectCard from "../components/ProjectCard";
 import Projects from "../data/Projects";
 
 export default function GallerySection() {
-  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section id="galeria" className="relative py-12 md:py-20 px-[6vw] bg-white overflow-hidden">
       <div className="container mx-auto">
 
         <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.07]">
-          <div className="absolute top-5 md:top-10 right-0 w-[300px] md:w-[620px] overflow-hidden">
+          <div className="absolute top-5 md:top-10 right-0 w-75 md:w-155 overflow-hidden">
             <svg 
               viewBox="0 0 620 140" 
               preserveAspectRatio="xMidYMid meet"
@@ -27,7 +25,7 @@ export default function GallerySection() {
             <line x1="0" y1="1" x2="100%" y2="1" stroke="#0B1F3A" strokeWidth="2" strokeDasharray="8 12" />
           </svg>
             
-          <div className="absolute bottom-20 left-1/4 w-1/2 h-[1px] border-b border-dashed border-[#0B1F3A] opacity-20"></div>
+          <div className="absolute bottom-20 left-1/4 w-1/2 h-px border-b border-dashed border-[#0B1F3A] opacity-20"></div>
         </div>
         
         <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 md:mb-16" data-aos="fade-up">
@@ -41,10 +39,10 @@ export default function GallerySection() {
         </div>
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[275px] items-stretch">
-          {Projects.slice(0, 5).map((p, i) => (
+          {Projects.slice(0, 5).map((p) => (
             <div 
               key={p.id} 
-              className={`relative w-full h-[400px] 
+              className={`relative w-full h-100
                 ${p.tall ? 'md:row-span-2 md:h-full' : 'md:h-full'}`} 
               data-aos="fade-up"
             >

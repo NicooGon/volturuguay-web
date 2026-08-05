@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import ReviewCard from "../components/ReviewCard";
 
 const REVIEWS = [
@@ -10,12 +9,12 @@ const REVIEWS = [
 export default function ReviewSection() {
 
   return (
-    <section id="reseñas" className="relative py-28 px-[6vw] bg-gradient-to-b from-[#F8FAFC] to-white overflow-hidden">
+    <section id="reseñas" className="relative py-28 px-[6vw] bg-linear-to-b from-[#F8FAFC] to-white overflow-hidden">
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-20">
           <div className="max-w-xl" data-aos="fade-right">
             <span className="text-[#2F7FD8] text-[0.7rem] font-bold uppercase tracking-[0.2em] flex items-center gap-3 mb-5">
-              <span className="w-10 h-[2px] bg-[#2F7FD8]" /> Testimonios
+              <span className="w-10 h-0.5 bg-[#2F7FD8]" /> Testimonios
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold text-[#0B1F3A] leading-[1.1] tracking-tighter">
               Lo que dicen <br /> nuestros clientes
