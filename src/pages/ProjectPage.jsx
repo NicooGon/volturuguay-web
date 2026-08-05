@@ -6,7 +6,7 @@ import "yet-another-react-lightbox/styles.css";
 import Projects from "../data/Projects";
 
 
-const FILTERS = ["Todos", "Infraestructura", "Comercial", "Obra Nueva", "Iluminación Exterior", "Industrial"];
+const FILTERS = ["Todos", "Comercial", "Residencial", "Iluminación Exterior", "Industrial"];
 
 export default function ProjectPage() {
   const [activeFilter, setActiveFilter] = useState("Todos");

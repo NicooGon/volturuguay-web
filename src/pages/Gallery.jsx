@@ -41,7 +41,7 @@ export default function GallerySection() {
         </div>
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[275px] items-stretch">
-          {Projects.map((p, i) => (
+          {Projects.slice(0, 5).map((p, i) => (
             <div 
               key={p.id} 
               className={`relative w-full h-[400px] 

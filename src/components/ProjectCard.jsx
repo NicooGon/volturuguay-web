@@ -2,23 +2,25 @@ export default function ProjectCard({ project, onClick, variant = "grid" }) {
   return (
     <div 
       onClick={onClick}
-      className={`relative group rounded-[1.5rem] overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 bg-[#0B141E]
+      className={`relative group rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 bg-[#0B141E]
         ${variant === "hero" 
           ? "h-full w-full" 
           : "aspect-[4/3] w-full"} 
       `}
     >
-      <img 
-        src={project.img} 
-        alt={project.title} 
-        className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+      <img
+        src={project.img}
+        alt={project.title}
+        loading="lazy"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
       />
       
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0B141E] via-[#0B141E]/20 to-transparent transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-linear-to-t from-[#0B141E] via-[#0B141E]/20 to-transparent transition-opacity duration-500" />
 
       <div className="absolute inset-0 p-3 sm:p-5 md:p-8 flex flex-col justify-end z-10">
         
-        <span className="text-[#2F7FD8] text-[8px] sm:text-[10px] md:text-[0.7rem] font-black uppercase mb-1 tracking-[0.1em] md:tracking-[0.15em]">
+        <span className="text-[#2F7FD8] text-[8px] sm:text-[10px] md:text-[0.7rem] font-black uppercase mb-1 tracking-widest md:tracking-[0.15em]">
           {project.tag}
         </span>
         
@@ -33,7 +35,7 @@ export default function ProjectCard({ project, onClick, variant = "grid" }) {
         </div>
       </div>
 
-      <div className="absolute inset-0 border border-white/5 rounded-[1.5rem] pointer-events-none" />
+      <div className="absolute inset-0 border border-white/5 rounded-3xl pointer-events-none" />
     </div>
   );
 }
